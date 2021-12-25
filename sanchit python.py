@@ -1,5 +1,5 @@
 while True:
-    print("Welcom to Calculate \n1.Calculate \n2.Area Finder \n3. Volume of finder \n4.Exit")
+    print("Welcome to Calculator \n1.Calculate Finfer \n2.Area Finder \n3.Volume of finder \n4.Exit")
     opt=int(input("Choose any option:"))
     if opt==1:
         while True:
@@ -21,11 +21,16 @@ while True:
                 a=int(input("Enter the 1st value:"))
                 b=int(input("Enter the 2st value:"))
                 print(a/b)
+            else:
+                print("Invalid option")
             a=input("Do you want to go in main  menu (Y/N)")
-            if a=="y":
+            if a=="Y":
                 break
-            elif a=="n":
+            elif a=="N":
                 continue
+            else:
+                print("Invalid option")
+            
             
                 
     elif opt==2:
@@ -50,11 +55,15 @@ while True:
                 p=22/7
                 a=(r**2)*p
                 print("Area of Circle is:",a)
+            else:
+                print("Invalid option")
             a=input("Do you want to go in main  menu (Y/N)")
-            if a=="y":
+            if a=="Y":
                 break
-            elif a=="n":
+            elif a=="N":
                 continue
+            else:
+                print("Invalid option")
     elif opt==3:
         while True:
             print("1.Volume of Square \n.2. Volume of circle ")
@@ -66,12 +75,19 @@ while True:
                 r=int(input("Radius of Circle:"))
                 p=(22/7)*(4/3)
                 print("volume of circle:",(r**3)*p)
+            else:
+                print("Invalid option")
             a=input("Do you want to go in main  menu (Y/N)")
-            if a=="y":
+            if a=="Y":
                 break
-            elif a=="n":
+            elif a=="N":
                 continue
+            else:
+                print("Invalid option")
                 
     elif opt==4:
             print("Bye Bye")
             break
+    else:
+        print("Invalid option")
+
